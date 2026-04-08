@@ -1,0 +1,26 @@
+components:
+- layout_properties: {grid_position: 'MWPMFD,HAQNXG'}
+  name: label_1
+  properties: {align: center, bold: true, italic: true, text: Anmelden}
+  type: Label
+- event_bindings: {}
+  layout_properties: {grid_position: 'MWPMFD,AVFRMW'}
+  name: button_1
+  properties:
+    align: right
+    text: |
+      Back
+  type: Button
+- components:
+  - name: repeating_panel_Mitglieder
+    properties: {item_template: AnmeldeForm.RowTemplate2}
+    type: RepeatingPanel
+  layout_properties: {grid_position: 'VWWDAO,SGCZOC'}
+  name: data_grid_Mitglieder
+  properties:
+    columns:
+    - {data_key: mitglied, expand: false, id: JKSDUP, title: Mitglied, width: 380.428466796875}
+    - {data_key: column_2, id: VJQQOR, title: Anmelden}
+  type: DataGrid
+container: {type: ColumnPanel}
+is_package: true
