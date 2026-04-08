@@ -13,3 +13,5 @@ class Kursuebersicht(KursuebersichtTemplate):
 
     kurse = anvil.server.call("Query_Get_Kursuebersicht")
     self.repeating_panel_Kursuebersicht.items = kurse
+
+    print(kurse)

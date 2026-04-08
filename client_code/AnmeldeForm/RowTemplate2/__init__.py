@@ -17,5 +17,6 @@ class RowTemplate2(RowTemplate2Template):
   def button_hinzufuegen_click(self, **event_args):
     """This method is called when the button is clicked"""
     anvil.server.call('Query_Insert_Mitglied',self.item["mitglied_id"],self.item["kurs_id"])
+    open_form('Kursuebersicht')
 
     

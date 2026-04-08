@@ -16,6 +16,8 @@ class AnmeldeForm(AnmeldeFormTemplate):
     Mitglieder = anvil.server.call("Query_Get_Mitglieder", self.kurs_id)
     self.repeating_panel_Mitglieder.items = Mitglieder
 
+    print(Mitglieder)
+
   @handle("button_1", "click")
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
